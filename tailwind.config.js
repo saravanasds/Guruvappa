@@ -9,10 +9,7 @@ export default {
       screens: {
         'xs': '480px',
         'xxs': '375px'
-
       },
-
-
       colors: {
         'primary': '#BAFF39',
         'secondary': '#1B2945',
