@@ -3,6 +3,7 @@ import AboutHero from '../About-Components/AboutHero';
 import History from '../About-Components/History';
 import Philosophy from '../About-Components/Philosophy';
 import VissionMission from '../About-Components/VissionMission';
+import Legacy from '../About-Components/Legacy';
 
 const About = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const About = () => {
       <History />
       <Philosophy />
       <VissionMission />
+      <Legacy />
     </div>
   )
 }

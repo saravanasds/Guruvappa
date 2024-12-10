@@ -1,12 +1,12 @@
 import React from 'react'
-import bgImage from "../assets/contact-gh.jpg"
+import bgImage from "../assets/computer.jpg"
 
 const HomeContact = () => {
     return (
         <>
             <div className='relative w-full min-h-[90vh] flex flex-col items-center justify-center'>
-                <div className='absolute inset-0 w-full' style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
-                <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-l from-secondary via-[#1b2945f4] to-[#1b29458d]"></div>
+                <div className='absolute inset-0 w-full' style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "top" }}></div>
+                <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-l from-secondary via-[#1b2945f4] to-[#1b294545]"></div>
                 <div className='relative w-[80%] min-h-[70vh] flex gap-1'>
                     <div className='w-full min-h-[70vh]'>
 

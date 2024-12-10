@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
-import logo from "../assets/gh.png"
+import logo from "../assets/g-trans.png"
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -49,21 +49,25 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className='w-full z-50'>
+        <nav className='w-full z-50 py-2 px-4 xs:px-8'>
             <div className="w-full mx-auto">
                 <div className="flex items-center justify-between ">
                     <div className="flex flex-col items-center justify-between w-full ">
-                        <div className="flex-shrink-0 text-secondary my-2 flex justify-center items-center gap-4">
-                            <img src={logo} alt="" className='w-16 h-16' />
-                            <h1 className="uppercase font-bold sm:text-3xl tracking-widest">Guruvappa Higher Secondary School</h1>
+                        <div className="flex-shrink-0 text-secondary my-2 flex justify-center items-center gap-3 sm:gap-4 ">
+                            <img src={logo} alt="" className='w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 ' />
+                            <div className='my-2 flex flex-col justify-center items-center '>
+                                <h1 className="uppercase text-left font-bold sm:text-xl md:text-xl lg:text-3xl tracking-normal lg:tracking-widest">Guruvappa Higher Secondary School</h1>
+                                <h2 className='hidden sm:block tracking-wide text-sm lg:text-lg uppercase font-semibold text-center text-gray-500'>Neikkarapatti, Palani - 624 615</h2>
+                            </div>
+
                         </div>
                         <div
-                            className={`bg-white w-full hidden md:block tracking-wider px-6 py-2 text-black nav z-50 top-0 uppercase text-sm ease-in-out ${isScrolled
-                                    ? 'fixed bg-white shadow-lg py-6 transform transition-all duration-500 '
-                                    : 'relative '
+                            className={`bg-white w-full hidden md:block tracking-wider px-6 py-2 pb-3 text-black nav z-50 top-0 uppercase text-sm ease-in-out ${isScrolled
+                                ? 'fixed bg-white shadow-lg py-6 transform transition-all duration-500 '
+                                : 'relative '
                                 }`}
                         >
-                            <div className="w-full flex items-baseline space-x-6 xl:space-x-10 flex-wrap justify-center font-bold">
+                            <div className="w-full flex items-baseline space-x-6 xl:space-x-8 space-y-2 flex-wrap justify-center font-bold leading-relaxed">
                                 <NavLink
                                     to="/"
                                     className={({ isActive }) =>
@@ -236,7 +240,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     {/* Mobile Menu Button */}
-                    <div className="-mr-2 flex md:hidden">
+                    <div className="flex md:hidden">
                         <button
                             onClick={toggleNavbar}
                             className="inline-flex items-center justify-center p-2 rounded-md text-[#3E4095] hover:text-[#3E4095] hover:bg-white focus:outline-none"
@@ -244,7 +248,7 @@ const Navbar = () => {
                             {!isOpen ? (
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="h-6 w-6"
+                                    className="h-8 w-8"
                                     fill="none"
                                     viewBox="0 0 24 24"
                                     stroke="currentColor"
@@ -278,35 +282,38 @@ const Navbar = () => {
             </div>
 
             {isOpen && (
-                <div className="md:hidden w-full min-h-screen bg-gray-200 absolute">
-                    <div className="px-2 py-2 pb-4 space-x-8 sm:px-3 text-[14px] sm:text-[16px] font-bold flex flex-col">
+                <div className="md:hidden w-full left-0 right-0 h-auto bg-gray-200 absolute">
+                    <div className="w-[90%] mx-auto flex flex-col text-black font-semibold p-4 text-left gap-2 uppercase text-sm tracking-wider">
 
                         <NavLink
                             to="/"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Home
                         </NavLink>
                         <NavLink
                             to="/about"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             About
                         </NavLink>
                         <NavLink
                             to="/infratructure"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Infratructure
@@ -314,120 +321,132 @@ const Navbar = () => {
 
                         <NavLink
                             to="/academics"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Academics
                         </NavLink>
                         <NavLink
                             to="/sports"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Sports
                         </NavLink>
                         <NavLink
                             to="/curriculam"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Curriculam
                         </NavLink>
                         <NavLink
                             to="/achivements"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Achivements
                         </NavLink>
                         <NavLink
                             to="/alumini"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Alumini
                         </NavLink>
                         <NavLink
                             to="/gallery"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Gallery
                         </NavLink>
                         <NavLink
                             to="/admission"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Admission
                         </NavLink>
                         <NavLink
                             to="/subjects"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Subjects
                         </NavLink>
                         <NavLink
                             to="/staffs"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Staffs
                         </NavLink>
                         <NavLink
                             to="/calender"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Calender
                         </NavLink>
                         <NavLink
                             to="/blog"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Blog
                         </NavLink>
                         <NavLink
                             to="/contact"
+                            onClick={toggleNavbar}
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "border-b-2 border-gray-500 pb-1"
+                                    : "border-b-2 border-gray-300 pb-1"
                             }
                         >
                             Contact

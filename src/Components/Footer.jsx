@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../assets/gh.png"
+import logo from "../assets/g-white.png"
 import { FaFacebookF, FaInstagram, } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaSquarePhone } from "react-icons/fa6";
@@ -27,16 +27,14 @@ function Footer() {
         >
             <div className="bg-[#0c0c0c] bg-opacity-80 py-8 md:py-20 backdrop-blur-[2px]">
                 <div className="w-full mx-auto flex flex-col justify-center items-center px-6 text-sm sm:text-[16px]">
-                    {/* Clinic Overview */}
-                    <div className="w-full flex flex-col items-center mb-16" data-aos="fade-right">
-                        <div className="flex-shrink-0 text-gray-300 flex justify-center items-center gap-4">
-                            <img src={logo} alt="" className='w-16 h-16' />
-                            <h1 className="uppercase font-bold sm:text-3xl tracking-widest text-gray-300">Guruvappa Higher Secondary School</h1>
 
+                    <div className="flex-shrink-0 text-white flex justify-center items-center gap-3 sm:gap-4 mb-16">
+                        <img src={logo} alt="" className='w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 ' />
+                        <div className='my-2 flex flex-col justify-center items-center '>
+                            <h1 className="uppercase text-left font-bold sm:text-xl md:text-xl lg:text-3xl tracking-normal lg:tracking-widest">Guruvappa Higher Secondary School</h1>
+                            <h2 className='hidden sm:block tracking-wide text-sm lg:text-lg uppercase font-semibold text-center text-gray-400'>Neikkarapatti, Palani - 624 615</h2>
                         </div>
-                        <p className="text-center text-sm tracking-wider">
-                            Description for some words
-                        </p>
+
                     </div>
 
                     {/* Grid for 4 Columns */}
@@ -49,13 +47,11 @@ function Footer() {
                             <h2 className="w-full pb-2 text-lg font-semibold mb-4 text-left text-gray-300 border-b border-prime">Academics</h2>
                             <ul className="space-y-2 flex flex-col gap-2 ">
                                 <li className="flex items-center space-x-2">
-
                                     <Link to="/" onClick={scrollToTop} className=" hover:text-prime">
                                         Subjects and Syllabus
                                     </Link>
                                 </li>
                                 <li className="flex items-center space-x-2">
-
                                     <Link to="/sports" onClick={scrollToTop} className=" hover:text-prime">
                                         Sports and Gamings
                                     </Link>

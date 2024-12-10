@@ -1,6 +1,6 @@
 import React from 'react'
-import vission from "../assets/academic.jpg"
-import mission from "../assets/sports.jpg"
+import vission from "../assets/vision.jpg"
+import mission from "../assets/mission.jpg"
 import { TbBrandVisualStudio } from "react-icons/tb";
 import { GoGoal } from "react-icons/go";
 
@@ -15,7 +15,7 @@ const VissionMission = () => {
                         <TbBrandVisualStudio className='text-7xl text-secondary mb-4' />
                         <h3 className='text-4xl font-semibold text-secondary tracking-wider mb-6'>Our Vision</h3>
                         <p className='text-lg text-black tracking-wider '>
-                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence.
+                            To empower every student with quality education, strong moral values, and lifelong learning skills, fostering responsible citizens who contribute positively to society and create a better future for all.
                         </p>
                     </div>
                 </div>
@@ -36,9 +36,18 @@ const VissionMission = () => {
                     <div className='w-[80%] mx-auto flex flex-col'>
                         <GoGoal className='text-7xl text-secondary mb-4' />
                         <h3 className='text-4xl font-semibold text-secondary tracking-wider mb-6'>Our Mission</h3>
-                        <p className='text-lg text-black tracking-wider '>
-                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence.
-                        </p>
+                        <ul className="list-disc text-lg text-black space-y-2 marker:text-prime">
+                            <li>
+                                Integrate modern technology and teaching methods to enhance learning outcomes.
+                            </li>
+                            <li>
+                                Promote values of discipline, integrity, and compassion in students.
+                            </li>
+                            <li>
+                                Ensure inclusive education that reaches every child, regardless of background.
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
 

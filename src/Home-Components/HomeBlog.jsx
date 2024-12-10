@@ -1,5 +1,5 @@
 import React from 'react'
-import bgImage from "../assets/gh3.jpg"
+import bgImage from "../assets/pillar.jpg"
 import blog1 from "../assets/academic.jpg"
 import blog2 from "../assets/sports.jpg"
 import blog3 from "../assets/plant.jpg"
@@ -56,17 +56,17 @@ const HomeBlog = () => {
                     </div>
 
                 </div>
-                <div className='relative w-[35%] min-h-[80vh] bg-secondary flex justify-center items-center'>
+                <div className='relative w-[35%] min-h-[80vh] bg-secondary flex justify-center items-center '>
                     <div className='absolute inset-0 w-full' style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
-                    <div className="absolute inset-0 flex items-center justify-start bg-secondary bg-opacity-90 "></div>
-                    <div className='relative w-[80%] mx-auto flex flex-col p-10 text-primary'>
+                    <div className="w-full absolute inset-0 flex items-center justify-start bg-[#0e1522] bg-opacity-80 "></div>
+                    <div className='relative w-[80%] mx-auto flex flex-col p-10 text-primary '>
                         <h3 className='text-white text-2xl font-semibold mb-8 flex items-center gap-4'><FaLink />Quick Links</h3>
-                        <p className='mb-4 border-b border-gray-500 pb-3 tracking-wider font-bold'>Blog</p>
-                        <p className='mb-4 border-b border-gray-500 pb-3 tracking-wider font-bold'>Sports</p>
-                        <p className='mb-4 border-b border-gray-500 pb-3 tracking-wider font-bold'>Achivements</p>
-                        <p className='mb-4 border-b border-gray-500 pb-3 tracking-wider font-bold'>Alumni</p>
-                        <p className='mb-4 border-b border-gray-500 pb-3 tracking-wider font-bold'>Gallery</p>
-                        <p className='mb-4 border-b border-gray-500 pb-3 tracking-wider font-bold'>Calender</p>
+                        <p className='mb-4 border-b border-gray-500 pb-3 tracking-wider font-bold cursor-pointer'>Blog</p>
+                        <p className='mb-4 border-b border-gray-500 pb-3 tracking-wider font-bold cursor-pointer'>Sports</p>
+                        <p className='mb-4 border-b border-gray-500 pb-3 tracking-wider font-bold cursor-pointer'>Achivements</p>
+                        <p className='mb-4 border-b border-gray-500 pb-3 tracking-wider font-bold cursor-pointer'>Alumni</p>
+                        <p className='mb-4 border-b border-gray-500 pb-3 tracking-wider font-bold cursor-pointer'>Gallery</p>
+                        <p className='mb-4 border-b border-gray-500 pb-3 tracking-wider font-bold cursor-pointer'>Calender</p>
                     </div>
                 </div>
             </div>
