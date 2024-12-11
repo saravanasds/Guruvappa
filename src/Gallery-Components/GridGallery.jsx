@@ -1,18 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 const GridGallery = () => {
-  const images = [
-    'https://via.placeholder.com/800x400',
-    'https://via.placeholder.com/801x401',
-    'https://via.placeholder.com/802x402',
-    'https://via.placeholder.com/802x403',
-    'https://via.placeholder.com/802x404',
-    'https://via.placeholder.com/802x405',
-    'https://via.placeholder.com/802x406',
-    'https://via.placeholder.com/802x407',
-    'https://via.placeholder.com/802x408',
-  ];
+  const { eventId } = useParams(); // Get event ID from URL
+  const [images, setImages] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    const fetchEventImages = async () => {
+      try {
+        const response = await axios.get(`http://localhost:5000/api/admin/getEventImages/${eventId}`);
+        setImages(response.data.images); // Images directly from API
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching event images:', error);
+        setLoading(false);
+      }
+    };
+
+    fetchEventImages();
+  }, [eventId]);
 
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -59,7 +72,7 @@ const GridGallery = () => {
   }, [isLightboxOpen]); // Dependency on `isLightboxOpen`
 
   return (
-    <div className="w-[80%] grid grid-cols-3 gap-2 my-10">
+    <div className="w-[80%] mx-auto grid grid-cols-3 gap-2 my-10">
       {images.map((src, index) => (
         <img
           key={index}

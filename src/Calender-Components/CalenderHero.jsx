@@ -1,5 +1,5 @@
 import React from 'react'
-import bgImage from "../assets/video.jpg"
+import bgImage from "../assets/worldmap.jpg"
 
 const CalenderHero = () => {
     return (
@@ -7,8 +7,8 @@ const CalenderHero = () => {
             <div className='absolute inset-0 w-full' style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
             <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
-            <div className='relative my-20 mx-20'>
-                <h2 className='text-white text-5xl font-semibold tracking-wider mb-4'>School Calender </h2>
+            <div className='relative my-10 mx-20'>
+                <h2 className='text-white text-5xl font-semibold tracking-wider mb-4'>School Calendar </h2>
                 <p className='text-2xl text-primary font-semibold tracking-wider'>Current Year</p>
             </div>
         </div>

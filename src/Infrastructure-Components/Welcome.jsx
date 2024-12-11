@@ -32,6 +32,17 @@ import computerlab1 from "../assets/computerlab1.jpg"
 import computerlab2 from "../assets/computerlab2.jpg"
 import computerlab3 from "../assets/computerlab3.jpg"
 import hostel from "../assets/hostel.jpg"
+import skc from "../assets/skc.jpg"
+import skc1 from "../assets/skc1.jpg"
+import skc2 from "../assets/skc2.jpg"
+import skc3 from "../assets/skc3.jpg"
+import parking1 from "../assets/parking1.jpg"
+import parking2 from "../assets/parking2.jpg"
+import parking3 from "../assets/parking3.jpg"
+import hospital from "../assets/hospital.jpg"
+import hospital1 from "../assets/hospital1.jpg"
+import hospital2 from "../assets/hospital2.jpg"
+import hospital3 from "../assets/hospital3.jpg"
 import { TiArrowForwardOutline } from "react-icons/ti";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
 
@@ -129,7 +140,7 @@ const Welcome = () => {
                 <img src={auditorium} alt="" />
                 <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                     <h2 className='absolute bottom-4 left-12 text-white text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
-                        <TiArrowForwardOutline className='mt-2' /> Auditorium 
+                        <TiArrowForwardOutline className='mt-2' /> Auditorium
                     </h2>
                 </div>
             </div>
@@ -139,7 +150,7 @@ const Welcome = () => {
                     <img src={library1} alt="" />
                     <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                         <h2 className='absolute bottom-4 left-12 text-white text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
-                            <TiArrowForwardOutline className='mt-2' /> Library 
+                            <TiArrowForwardOutline className='mt-2' /> Library
                         </h2>
                     </div>
                 </div>
@@ -166,15 +177,52 @@ const Welcome = () => {
                 <img src={hostel} alt="" />
                 <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                     <h2 className='absolute bottom-4 left-12 text-white text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
-                        <TiArrowForwardOutline className='mt-2' /> Hostel 
+                        <TiArrowForwardOutline className='mt-2' /> Hostel
                     </h2>
                 </div>
             </div>
 
             <div className='w-full grid grid-cols-2 p-10 gap-1'>
-                <img src={computerlab1} alt="" />
-                <img src={computerlab2} alt="" className='row-span-2 w-full h-full object-cover' />
-                <img src={computerlab3} alt="" />
+            <div className='relative row-span-2'>
+                    <img src={parking3} alt="" />
+                    <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
+                        <h2 className='absolute bottom-4 left-12 text-white text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
+                            <TiArrowForwardOutline className='mt-2' /> Bus Parking Area's
+                        </h2>
+                    </div>
+                </div>
+                <img src={parking2} alt="" className='w-full h-full object-cover'/>
+                <img src={parking1} alt="" className='w-full h-full object-cover'/>
+            </div>
+
+            <div className='relative'>
+                <img src={skc} alt="" />
+                <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
+                    <h2 className='absolute bottom-4 left-12 text-white text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
+                        <TiArrowForwardOutline className='mt-2' /> SKC Elementary School <RiArrowDownDoubleLine className='mt-2' />
+                    </h2>
+                </div>
+            </div>
+
+            <div className='w-full grid grid-cols-2 p-10 gap-1'>
+                <img src={skc1} alt="" className='w-full h-full object-cover'/>
+                <img src={skc3} alt="" className='row-span-2 w-full h-full object-cover' />
+                <img src={skc2} alt="" className='w-full h-full object-cover'/>
+            </div>
+
+            <div className='relative'>
+                <img src={hospital} alt="" />
+                <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
+                    <h2 className='absolute bottom-4 left-12 text-white text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
+                        <TiArrowForwardOutline className='mt-2' /> Meenakshisundharam Memorial Trust Hospital <RiArrowDownDoubleLine className='mt-2' />
+                    </h2>
+                </div>
+            </div>
+
+            <div className='w-full grid grid-cols-2 p-10 gap-1'>
+                <img src={hospital3} alt="" className='w-full h-full object-cover'/>
+                <img src={hospital2} alt="" className='row-span-2 w-full h-full object-cover' />
+                <img src={hospital1} alt="" className='w-full h-full object-cover'/>
             </div>
         </div>
     )

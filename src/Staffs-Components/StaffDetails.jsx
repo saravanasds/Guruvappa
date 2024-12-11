@@ -8,7 +8,7 @@ const StaffDetails = () => {
   useEffect(() => {
     const fetchStaffs = async () => {
       try {
-        const response = await axios.get('https://guruvappa-backend.onrender.com/api/admin/getAllStaffs');
+        const response = await axios.get('http://localhost:5000/api/admin/getAllStaffs');
         console.log('Staffs:', response.data);
         setStaffs(response.data);
       } catch (error) {

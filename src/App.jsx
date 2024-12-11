@@ -20,6 +20,7 @@ import Gallery from './Pages/Gallery';
 import Admission from './Pages/Admission';
 import Staffs from './Pages/Staffs';
 import Blog from './Pages/Blog';
+import GridGallery from './Gallery-Components/GridGallery';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -59,6 +60,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/staffs" element={<Staffs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/gridGallery/:eventId" element={<GridGallery />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -144,6 +144,29 @@
   animation: slow-ping 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+.event-calendar-container {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.event-indicator {
+  height: 8px;
+  width: 8px;
+  background-color: #ff5722;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.event-details {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+
 
 
 

@@ -51,7 +51,7 @@ const Blogs = () => {
 
     return (
         <div className='w-full min-h-screen my-20'>
-            <div className='w-[80%] h-full mx-auto'>
+            <div className='w-[95%] h-full mx-auto'>
                 {blogs.map((blog) => (
                     <div key={blog.id} className='w-full flex mb-6 shadow-sm shadow-black rounded-sm bg-gray-100'>
                         <div className='w-[30%] p-2'>
