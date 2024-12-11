@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import { IoIosArrowForward } from "react-icons/io";
 import axios from 'axios';
 
 const GridGallery = () => {
   const { eventId } = useParams(); // Get event ID from URL
   const [images, setImages] = useState([]);
+  const [title, setTitle] = useState('');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -16,7 +18,8 @@ const GridGallery = () => {
     const fetchEventImages = async () => {
       try {
         const response = await axios.get(`http://localhost:5000/api/admin/getEventImages/${eventId}`);
-        setImages(response.data.images); // Images directly from API
+        setImages(response.data.event.images); // Images directly from API
+        setTitle(response.data.event.title);
         setLoading(false);
       } catch (error) {
         console.error('Error fetching event images:', error);
@@ -72,46 +75,57 @@ const GridGallery = () => {
   }, [isLightboxOpen]); // Dependency on `isLightboxOpen`
 
   return (
-    <div className="w-[80%] mx-auto grid grid-cols-3 gap-2 my-10">
-      {images.map((src, index) => (
-        <img
-          key={index}
-          src={src}
-          alt={`Image ${index + 1}`}
-          className="cursor-pointer w-full"
-          onClick={() => openLightbox(index)}
-        />
-      ))}
+    <div className='w-full min-h-screen bg-gray-100 py-10'>
 
-      {isLightboxOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative">
-            <button
-              onClick={closeLightbox}
-              className="absolute -top-10 -right-10 text-white p-1 px-3 text-2xl"
-            >
-              ✕
-            </button>
-            <button
-              onClick={showPrevious}
-              className="absolute -left-9 top-1/2 transform -translate-y-1/2 text-white text-3xl"
-            >
-              <MdArrowBackIos />
-            </button>
-            <img
-              src={images[currentImageIndex]}
-              alt={`Image ${currentImageIndex + 1}`}
-              className="max-w-full max-h-[80vh] object-contain"
-            />
-            <button
-              onClick={showNext}
-              className="absolute -right-10 top-1/2 transform -translate-y-1/2 text-white text-3xl"
-            >
-              <MdArrowForwardIos />
-            </button>
+      <h2 className="w-[80%] mx-auto text-xl flex items-center gap-2 underline underline-offset-2 tracking-wider font-semibold text-gray-600 italic">
+        <Link to={"/gallery"}>Gallery</Link>
+        <IoIosArrowForward className="mt-1" />
+        <span>{title}</span>
+      </h2>
+
+
+      <div className="w-[80%] mx-auto grid grid-cols-3 gap-2 my-8">
+
+        {images.map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            alt={`Image ${index + 1}`}
+            className="cursor-pointer w-full h-full object-cover"
+            onClick={() => openLightbox(index)}
+          />
+        ))}
+
+        {isLightboxOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+            <div className="relative">
+              <button
+                onClick={closeLightbox}
+                className="absolute -top-10 -right-10 text-white p-1 px-3 text-2xl"
+              >
+                ✕
+              </button>
+              <button
+                onClick={showPrevious}
+                className="absolute -left-9 top-1/2 transform -translate-y-1/2 text-white text-3xl"
+              >
+                <MdArrowBackIos />
+              </button>
+              <img
+                src={images[currentImageIndex]}
+                alt={`Image ${currentImageIndex + 1}`}
+                className="max-w-full max-h-[80vh] object-contain"
+              />
+              <button
+                onClick={showNext}
+                className="absolute -right-10 top-1/2 transform -translate-y-1/2 text-white text-3xl"
+              >
+                <MdArrowForwardIos />
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
