@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://guruvappaschool.in/</loc>
+    <lastmod>2024-12-24</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://guruvappaschool.in/about</loc>
+    <lastmod>2024-12-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  
+<!-- Infrastructure Page -->
+  <url>
+    <loc>https://guruvappaschool.in/infrastructure</loc>
+    <lastmod>2024-12-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  
+
+  <!-- Sports Page -->
+  <url>
+    <loc>https://guruvappaschool.in/sports</loc>
+    <lastmod>2024-12-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Calendar Page -->
+  <url>
+    <loc>https://guruvappaschool.in/calender</loc>
+    <lastmod>2024-12-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+
+  <!-- Gallery Page -->
+  <url>
+    <loc>https://guruvappaschool.in/gallery</loc>
+    <lastmod>2024-12-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://guruvappaschool.in/contact</loc>
+    <lastmod>2024-12-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Page -->
+  <url>
+    <loc>https://guruvappaschool.in/blog</loc>
+    <lastmod>2024-12-24</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Alumni Page -->
+  <url>
+    <loc>https://guruvappaschool.in/alumini</loc>
+    <lastmod>2024-12-24</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Curriculum Page -->
+  <url>
+    <loc>https://guruvappaschool.in/curriculam</loc>
+    <lastmod>2024-12-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Staff Page -->
+  <url>
+    <loc>https://guruvappaschool.in/staffs</loc>
+    <lastmod>2024-12-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>

@@ -3,6 +3,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import Img from '../assets/computer.jpg'; // Banner image path
 import axios from 'axios';
 import ClipLoader from 'react-spinners/ClipLoader';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
 
@@ -40,6 +41,18 @@ const Contact = () => {
 
   return (
     <div>
+
+      <Helmet>
+        <title>Contact Us - Guruvappa School</title>
+        <meta name="description" content="Get in touch with Guruvappa School. Find our contact details, address, and contact form for inquiries or feedback." />
+        <meta name="keywords" content="Contact Guruvappa School, school contact, Guruvappa School address, contact form" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Contact Us - Guruvappa School" />
+        <meta property="og:description" content="Get in touch with Guruvappa School. Find our contact details, address, and contact form for inquiries or feedback." />
+        <meta property="og:image" content="https://guruvappaschool.in/contact-us-cover.jpg" />
+        <meta property="og:url" content="https://guruvappaschool.in/contact" />
+        <meta property="og:type" content="website" />
+      </Helmet>
 
       {/* Banner Section */}
       <section className="relative min-h-[50vh] flex justify-center items-center bg-gray-200">
