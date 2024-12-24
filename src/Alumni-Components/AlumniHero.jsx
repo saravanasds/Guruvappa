@@ -1,5 +1,5 @@
 import React from 'react'
-import bgImage from "../assets/video.jpg"
+import bgImage from "../assets/stage.jpg"
 import { TiArrowForwardOutline } from "react-icons/ti";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
 
