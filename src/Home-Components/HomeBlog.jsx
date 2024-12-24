@@ -41,7 +41,7 @@ const HomeBlog = () => {
                                 <>
                                     <img
                                         src={blogs[0].photo || bgImage}
-                                        alt=""
+                                        alt="guruvappa school blogs"
                                         className='w-full h-60 object-cover mb-2'
                                     />
                                     <p className='text-base sm:text-xl font-bold'>{blogs[0].title}</p>
@@ -63,7 +63,7 @@ const HomeBlog = () => {
                                     <div className='w-[20%]'>
                                         <img
                                             src={blog.photo || bgImage}
-                                            alt=""
+                                            alt="guruvappa school blog images"
                                             className='w-[100%] h-20 object-cover'
                                         />
                                     </div>

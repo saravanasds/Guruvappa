@@ -1,13 +1,14 @@
 import React from 'react'
 import textile from "../assets/textile.jpg"
-import scouts from "../assets/scouts.jpg"
-import jrc from "../assets/jrc.jpg"
+import scouts from "../assets/scout.jpg"
+import jrc from "../assets/jrc.jpeg"
 import horseride from "../assets/horse1.jpg"
+import swimmingpool from "../assets/swimmingpool.jpeg"
 import horseHero from "../assets/horse-hero.jpg"
 import shooting from "../assets/shooting.jpg"
 import award from "../assets/award.jpg"
 import music from "../assets/music.jpg"
-import dancing from "../assets/dancing.jpg"
+import dancing from "../assets/dance.jpeg"
 import drawing from "../assets/drawing.jpg"
 import { TiArrowForwardOutline } from "react-icons/ti";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
@@ -37,7 +38,7 @@ const CurricularActivities = () => {
                     </div>
 
                     <div className='w-full md:w-[50%] h-[50vh]'>
-                        <img src={shooting} alt="" className='w-full h-[50vh] object-cover' />
+                        <img src={shooting} alt="guruvappa school ncc" className='w-full h-[50vh] object-cover' />
                     </div>
 
                 </div>
@@ -45,7 +46,7 @@ const CurricularActivities = () => {
                 <div className='w-full min-h-[50vh] flex flex-col-reverse md:flex-row justify-center items-center'>
 
                     <div className='w-full md:w-[50%] h-[50vh]'>
-                        <img src={award} alt="" className='w-full h-[50vh] object-cover' />
+                        <img src={award} alt="guruvappa school ncc student" className='w-full h-[50vh] object-cover' />
                     </div>
 
                     <div className='w-full md:w-[50%] flex justify-center items-center py-6'>
@@ -74,7 +75,7 @@ const CurricularActivities = () => {
                     </div>
 
                     <div className='w-full md:w-[50%] h-[50vh]'>
-                        <img src={scouts} alt="" className='w-full h-[50vh] object-cover' />
+                        <img src={scouts} alt="guruvappa school scouts" className='w-full h-[50vh] object-cover' />
                     </div>
 
                 </div>
@@ -82,7 +83,7 @@ const CurricularActivities = () => {
                 <div className='w-full min-h-[50vh] flex flex-col-reverse md:flex-row justify-center items-center'>
 
                     <div className='w-full md:w-[50%] h-[50vh]'>
-                        <img src={jrc} alt="" className='w-full h-[50vh] object-cover' />
+                        <img src={jrc} alt="guruvappa school jrc" className='w-full h-[50vh] object-cover' />
                     </div>
 
                     <div className='w-full md:w-[50%] flex justify-center items-center py-6'>
@@ -108,16 +109,29 @@ const CurricularActivities = () => {
                     </div>
 
                     <div className='w-full md:w-[50%] h-[50vh]'>
-                        <img src={horseride} alt="" className='w-full h-[50vh] object-cover' />
+                        <img src={horseride} alt="guruvappa school horse riding" className='w-full h-[50vh] object-cover' />
+                    </div>
+
+                </div>
+
+                <div className='w-full min-h-[50vh] flex flex-col md:flex-row justify-center items-center'>
+
+                    <div className='w-full md:w-[50%] h-[50vh]'>
+                        <img src={swimmingpool} alt="guruvappa school swimming pool" className='w-full h-[50vh] object-cover' />
+                    </div>
+
+                    <div className='w-full md:w-[50%] flex justify-center items-center py-6'>
+                        <div className='w-full sm:w-[80%] mx-auto flex flex-col'>
+                            <h3 className='text-xl sm:text-3xl font-bold text-secondary tracking-wider mb-3 sm:mb-6 text-left'>Swimming</h3>
+                            <p className='text-base sm:text-lg text-black tracking-wider '>
+                                Swimming is a valuable life skill and a great way to stay fit and healthy. It helps improve cardiovascular health, build muscle strength, and develop coordination. Swimming also teaches discipline, resilience, and teamwork, making it an excellent activity for personal growth and overall well-being.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
 
                 <div className='w-full min-h-[50vh] flex flex-col-reverse md:flex-row justify-center items-center'>
-
-                    <div className='w-full md:w-[50%] h-[50vh]'>
-                        <img src={textile} alt="" className='w-full h-[50vh] object-cover' />
-                    </div>
 
                     <div className='w-full md:w-[50%] flex justify-center items-center py-6 '>
                         <div className='w-full sm:w-[80%] mx-auto flex flex-col'>
@@ -128,9 +142,19 @@ const CurricularActivities = () => {
                         </div>
                     </div>
 
+                    <div className='w-full md:w-[50%] h-[50vh]'>
+                        <img src={textile} alt="guruvappa school tailoring classes" className='w-full h-[50vh] object-cover' />
+                    </div>
+
+
+
                 </div>
 
                 <div className='w-full min-h-[50vh] flex flex-col md:flex-row justify-center items-center'>
+
+                    <div className='w-full md:w-[50%] h-[50vh]'>
+                        <img src={music} alt="guruvappa school Music Activity" className='w-full h-[50vh] object-cover' />
+                    </div>
 
                     {/* Music Section */}
                     <div className='w-full md:w-[50%] flex justify-center items-center py-6  '>
@@ -142,17 +166,12 @@ const CurricularActivities = () => {
                         </div>
                     </div>
 
-                    <div className='w-full md:w-[50%] h-[50vh]'>
-                        <img src={music} alt="Music Activity" className='w-full h-[50vh] object-cover' />
-                    </div>
+
                 </div>
 
                 <div className='w-full min-h-[50vh] flex flex-col-reverse md:flex-row justify-center items-center'>
 
-                    {/* Dancing Section */}
-                    <div className='w-full md:w-[50%] h-[50vh]'>
-                        <img src={dancing} alt="Dancing Activity" className='w-full h-[50vh] object-cover' />
-                    </div>
+
 
                     <div className='w-full md:w-[50%] flex justify-center items-center py-6 '>
                         <div className='w-full sm:w-[80%] mx-auto flex flex-col'>
@@ -162,9 +181,18 @@ const CurricularActivities = () => {
                             </p>
                         </div>
                     </div>
+
+                    {/* Dancing Section */}
+                    <div className='w-full md:w-[50%] h-[50vh]'>
+                        <img src={dancing} alt="guruvappa school Dancing Classes" className='w-full h-[50vh] object-cover' />
+                    </div>
                 </div>
 
                 <div className='w-full min-h-[50vh] flex flex-col md:flex-row justify-center items-center'>
+
+                    <div className='w-full md:w-[50%] h-[50vh] mb-4'>
+                        <img src={drawing} alt="guruvappa school Drawing Classes" className='w-full h-[50vh] object-cover' />
+                    </div>
 
                     {/* Drawing Section */}
                     <div className='w-full md:w-[50%] flex justify-center items-center py-6 '>
@@ -176,9 +204,7 @@ const CurricularActivities = () => {
                         </div>
                     </div>
 
-                    <div className='w-full md:w-[50%] h-[50vh] mb-4'>
-                        <img src={drawing} alt="Drawing Activity" className='w-full h-[50vh] object-cover' />
-                    </div>
+
                 </div>
 
             </div>

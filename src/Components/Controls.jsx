@@ -37,7 +37,7 @@ function Controls() {
     return (
         <div className='fixed bottom-10 right-10 z-[99] flex flex-col space-y-4'>
 
-            <a href="https://wa.me/919994476524?text=Hello%20Sir,%20I%20am%20interested%20in%20your%20service" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/919994476524" target="_blank" rel="noopener noreferrer">
                 <button className="bg-green-600 hover:bg-green-700 text-white p-3 rounded-full shadow-md transform transition-all duration-500 hover:scale-110 hover:rotate-12 animate-bounce hover:animate-spin">
                     <FaWhatsapp className="text-white" size={24} />
                 </button>

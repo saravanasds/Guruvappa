@@ -84,7 +84,7 @@ const Events = () => {
                     </div>
 
                     <div className='w-full md:w-[50%] lg:w-full md:min-h-[80vh] bg-white flex flex-col justify-center items-center md:items-start md:pr-8 px-4 pt-4 md:p-8 '>
-                        <img src={bgImage} alt="" className='w-full h-80 object-cover' />
+                        <img src={bgImage} alt="guruvappa school event" className='w-full h-80 object-cover' />
                         <p className='w-full py-3 font-semibold text-gray-400'>June 6, 2024/ Admission, Student</p>
                         <p className='w-full text-lg sm:text-xl font-semibold'>Professor Albert joint research on mobile money in Tanzania</p>
                     </div>

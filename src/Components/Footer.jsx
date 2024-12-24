@@ -29,7 +29,7 @@ function Footer() {
                 <div className="w-full mx-auto flex flex-col justify-center items-center px-6 text-sm sm:text-[16px]">
 
                     <div className="w-full flex-shrink-0 text-white flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 mb-8 md:mb-16 ">
-                        <img src={logo} alt="" className='w-24 h-24 sm:w-16 sm:h-16 md:w-20 md:h-20 ' />
+                        <img src={logo} alt="guruvappa school logo" className='w-24 h-24 sm:w-16 sm:h-16 md:w-20 md:h-20 ' />
                         <div className='my-2 flex flex-col justify-center items-center '>
                             <h1 className="uppercase text-center font-bold text-base sm:text-xl md:text-xl lg:text-3xl tracking-normal lg:tracking-widest ">Guruvappa Higher Secondary School</h1>
                             <h2 className='tracking-wide text-sm lg:text-lg uppercase font-semibold text-center text-gray-400 '>Skc Nagar, Neikkarapatti, Palani</h2>
@@ -47,7 +47,7 @@ function Footer() {
                             <h2 className="w-full pb-2 text-lg font-semibold mb-4 text-left text-gray-300 border-b border-prime">Academics</h2>
                             <ul className="space-y-2 flex flex-col gap-2 ">
                                 <li className="flex items-center space-x-2">
-                                    <Link to="/" onClick={scrollToTop} className=" hover:text-prime">
+                                    <Link to="/curriculam" onClick={scrollToTop} className=" hover:text-prime">
                                         Subjects and Syllabus
                                     </Link>
                                 </li>
@@ -76,19 +76,19 @@ function Footer() {
                             <ul className="space-y-2 flex flex-col gap-2 ">
                                 <li className="flex items-center space-x-2">
 
-                                    <Link to="/" onClick={scrollToTop} className=" hover:text-prime">
+                                    <Link to="/blog" onClick={scrollToTop} className=" hover:text-prime">
                                         Blogs and Updates
                                     </Link>
                                 </li>
                                 <li className="flex items-center space-x-2">
 
-                                    <Link to="/achivement" onClick={scrollToTop} className=" hover:text-prime">
-                                        Achivements in Guruvappa
+                                    <Link to="/about" onClick={scrollToTop} className=" hover:text-prime">
+                                        About School History
                                     </Link>
                                 </li>
                                 <li className="flex items-center space-x-2">
 
-                                    <Link to="/alumni" onClick={scrollToTop} className=" hover:text-prime">
+                                    <Link to="/alumini" onClick={scrollToTop} className=" hover:text-prime">
                                         Alumni and Meetings
                                     </Link>
                                 </li>
@@ -106,26 +106,26 @@ function Footer() {
                             <ul className="space-y-2 flex flex-col gap-2 ">
                                 <li className="flex items-center space-x-2">
 
-                                    <Link to="/" onClick={scrollToTop} className=" hover:text-prime">
+                                    <Link to="/staffs" onClick={scrollToTop} className=" hover:text-prime">
                                         Staffs Details in our School
                                     </Link>
                                 </li>
                                 <li className="flex items-center space-x-2">
 
-                                    <Link to="/about" onClick={scrollToTop} className=" hover:text-prime">
+                                    <Link to="/infrastructure" onClick={scrollToTop} className=" hover:text-prime">
                                         Infrastructure of Campus
                                     </Link>
                                 </li>
                                 <li className="flex items-center space-x-2">
 
-                                    <Link to="/services" onClick={scrollToTop} className=" hover:text-prime">
-                                        Admission Details for Students
+                                    <Link to="/" onClick={scrollToTop} className=" hover:text-prime">
+                                        Upcoming Events Details
                                     </Link>
                                 </li>
                                 <li className="flex items-center space-x-2">
 
                                     <Link to="/contact" onClick={scrollToTop} className=" hover:text-prime">
-                                        About of our School
+                                        Contact us for more
                                     </Link>
                                 </li>
                             </ul>

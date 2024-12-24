@@ -48,16 +48,16 @@ const Welcome = () => {
         <div className='w-full flex flex-col justify-center items-center '>
 
             <div className='w-full grid grid-cols-2 p-2 sm:p-10 gap-1'>
-                <img src={arch} alt="" className='row-span-2 w-full h-full object-cover' />
-                <img src={way} alt="" />
-                <img src={gate} alt="" />
-                <img src={Cparking} alt="" />
-                <img src={sideView} alt="" className='row-span-2 w-full h-full object-cover' />
-                <img src={Bparking} alt="" />
+                <img src={arch} alt="guruvappa school arch" className='row-span-2 w-full h-full object-cover' />
+                <img src={way} alt="guruvappa school way" />
+                <img src={gate} alt="guruvappa school gate" />
+                <img src={Cparking} alt="guruvappa school car parking" />
+                <img src={sideView} alt="guruvappa school side view" className='row-span-2 w-full h-full object-cover' />
+                <img src={Bparking} alt="guruvappa school bike parking" />
             </div>
 
             <div className='relative'>
-                <img src={stage} alt="" />
+                <img src={stage} alt="guruvappa school stage" />
                 <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                     <h2 className='absolute -bottom-2 left-2 sm:-bottom-2 sm:left-2 text-white text-xl sm:text-2xl md:text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
                         <TiArrowForwardOutline className='mt-2' /> Inner View of Campus <RiArrowDownDoubleLine className='mt-2' />
@@ -66,16 +66,16 @@ const Welcome = () => {
             </div>
 
             <div className='w-full grid grid-cols-2 p-2 sm:p-10 gap-1'>
-                <img src={infra1} alt="" className='row-span-2 w-full h-full object-cover' />
-                <img src={infra2} alt="" />
-                <img src={infra3} alt="" />
+                <img src={infra1} alt="guruvappa school infrastructure" className='row-span-2 w-full h-full object-cover' />
+                <img src={infra2} alt="guruvappa school infrastructure" />
+                <img src={infra3} alt="guruvappa school infrastructure" />
                 {/* <img src={Cparking} alt="" />
                 <img src={sideView} alt="" className='row-span-2 w-full h-full object-cover' />
                 <img src={leftSideView} alt="" /> */}
             </div>
 
             <div className='relative'>
-                <img src={teacher} alt="" />
+                <img src={teacher} alt="guruvappa school class room" />
                 <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                     <h2 className='absolute -bottom-2 left-2 sm:-bottom-2 sm:left-2 text-white text-xl sm:text-2xl md:text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
                         <TiArrowForwardOutline className='mt-2' /> Class Rooms <RiArrowDownDoubleLine className='mt-2' />
@@ -84,13 +84,13 @@ const Welcome = () => {
             </div>
 
             <div className='w-full grid grid-cols-2 p-2 sm:p-10 gap-1'>
-                <img src={students} alt="" className='w-full h-full object-cover' />
-                <img src={pillar} alt="" className='row-span-2 w-full h-full object-cover' />
-                <img src={teacherS} alt="" className='w-full h-full object-cover' />
+                <img src={students} alt="guruvappa school students" className='w-full h-full object-cover' />
+                <img src={pillar} alt="guruvappa school piller" className='row-span-2 w-full h-full object-cover' />
+                <img src={teacherS} alt="guruvappa school teacher" className='w-full h-full object-cover' />
             </div>
 
             <div className='relative'>
-                <img src={groundFull} alt="" />
+                <img src={groundFull} alt="guruvappa school boys ground" />
                 <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                     <h2 className='absolute -bottom-2 left-2 sm:-bottom-2 sm:left-2 text-white text-xl sm:text-2xl md:text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
                         <TiArrowForwardOutline className='mt-2' /> Boys Play Ground <RiArrowDownDoubleLine className='mt-2' />
@@ -99,13 +99,13 @@ const Welcome = () => {
             </div>
 
             <div className='w-full grid grid-cols-2 p-2 sm:p-10 gap-1'>
-                <img src={rope} alt="" className='row-span-2 w-full h-full object-cover' />
-                <img src={ground} alt="" className=' w-full h-full object-cover' />
-                <img src={boysGround} alt="" className=' w-full h-full object-cover' />
+                <img src={rope} alt="guruvappa school rope" className='row-span-2 w-full h-full object-cover' />
+                <img src={ground} alt="guruvappa school ground" className=' w-full h-full object-cover' />
+                <img src={boysGround} alt="guruvappa school boys ground" className=' w-full h-full object-cover' />
             </div>
 
             <div className='relative'>
-                <img src={girlsGround} alt="" />
+                <img src={girlsGround} alt="guruvappa school girls ground" />
                 <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                     <h2 className='absolute -bottom-2 left-2 sm:-bottom-2 sm:left-2 text-white text-xl sm:text-2xl md:text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
                         <TiArrowForwardOutline className='mt-2' /> Girls Play Ground <RiArrowDownDoubleLine className='mt-2' />
@@ -114,13 +114,13 @@ const Welcome = () => {
             </div>
 
             <div className='w-full grid grid-cols-2 p-2 sm:p-10 gap-1'>
-                <img src={basekatball} alt="" />
-                <img src={vollyball} alt="" className='row-span-2 w-full h-full object-cover' />
-                <img src={girlsGround} alt="" />
+                <img src={basekatball} alt="guruvappa school basketball" />
+                <img src={vollyball} alt="guruvappa school vollyball" className='row-span-2 w-full h-full object-cover' />
+                <img src={girlsGround} alt="guruvappa school girls ground" />
             </div>
 
             <div className='relative'>
-                <img src={auditorium} alt="" />
+                <img src={auditorium} alt="guruvappa school auditorium" />
                 <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                     <h2 className='absolute -bottom-2 left-2 sm:-bottom-2 sm:left-2 text-white text-xl sm:text-2xl md:text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
                         <TiArrowForwardOutline className='mt-2' /> Auditorium
@@ -130,19 +130,19 @@ const Welcome = () => {
 
             <div className='w-full grid grid-cols-2 p-2 sm:p-10 gap-1'>
                 <div className='relative row-span-2'>
-                    <img src={library1} alt="" />
+                    <img src={library1} alt="guruvappa school library" />
                     <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                         <h2 className='absolute -bottom-2 left-2 sm:-bottom-2 sm:left-2 text-white text-xl sm:text-2xl md:text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
                             <TiArrowForwardOutline className='mt-2' /> Library
                         </h2>
                     </div>
                 </div>
-                <img src={library2} alt="" className='w-full h-full object-cover' />
-                <img src={library3} alt="" className='w-full h-full object-cover' />
+                <img src={library2} alt="guruvappa school library" className='w-full h-full object-cover' />
+                <img src={library3} alt="guruvappa school library" className='w-full h-full object-cover' />
             </div>
 
             <div className='relative'>
-                <img src={computer} alt="" />
+                <img src={computer} alt="guruvappa school computer lab" />
                 <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                     <h2 className='absolute -bottom-2 left-2 sm:-bottom-2 sm:left-2 text-white text-xl sm:text-2xl md:text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
                         <TiArrowForwardOutline className='mt-2' /> Computer Lab <RiArrowDownDoubleLine className='mt-2' />
@@ -151,13 +151,13 @@ const Welcome = () => {
             </div>
 
             <div className='w-full grid grid-cols-2 p-2 sm:p-10 gap-1'>
-                <img src={computerlab1} alt="" />
-                <img src={computerlab2} alt="" className='row-span-2 w-full h-full object-cover' />
-                <img src={computerlab3} alt="" />
+                <img src={computerlab1} alt="guruvappa school laboratry" />
+                <img src={computerlab2} alt="guruvappa school lab" className='row-span-2 w-full h-full object-cover' />
+                <img src={computerlab3} alt="guruvappa school lab" />
             </div>
 
             <div className='relative'>
-                <img src={hostel} alt="" />
+                <img src={hostel} alt="guruvappa school hostel" />
                 <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                     <h2 className='absolute -bottom-2 left-2 sm:-bottom-2 sm:left-2 text-white text-xl sm:text-2xl md:text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
                         <TiArrowForwardOutline className='mt-2' /> Hostel
@@ -167,19 +167,19 @@ const Welcome = () => {
 
             <div className='w-full grid grid-cols-2 p-2 sm:p-10 gap-1'>
             <div className='relative row-span-2'>
-                    <img src={parking3} alt="" />
+                    <img src={parking3} alt="guruvappa school school bus" />
                     <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                         <h2 className='absolute -bottom-2 left-2 sm:-bottom-2 sm:left-2 text-white text-xl sm:text-2xl md:text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
                             <TiArrowForwardOutline className='mt-2' /> Transport Facilities
                         </h2>
                     </div>
                 </div>
-                <img src={parking2} alt="" className='w-full h-full object-cover'/>
-                <img src={parking1} alt="" className='w-full h-full object-cover'/>
+                <img src={parking2} alt="guruvappa school transport" className='w-full h-full object-cover'/>
+                <img src={parking1} alt="guruvappa school bus" className='w-full h-full object-cover'/>
             </div>
 
             <div className='relative'>
-                <img src={skc} alt="" />
+                <img src={skc} alt="SKC Elementary School" />
                 <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                     <h2 className='absolute -bottom-2 left-2 sm:-bottom-2 sm:left-2 text-white text-xl sm:text-2xl md:text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
                         <TiArrowForwardOutline className='mt-2' /> SKC Elementary School <RiArrowDownDoubleLine className='mt-2' />
@@ -188,13 +188,13 @@ const Welcome = () => {
             </div>
 
             <div className='w-full grid grid-cols-2 p-2 sm:p-10 gap-1'>
-                <img src={skc1} alt="" className='w-full h-full object-cover'/>
-                <img src={skc3} alt="" className='row-span-2 w-full h-full object-cover' />
-                <img src={skc2} alt="" className='w-full h-full object-cover'/>
+                <img src={skc1} alt="SKC Elementary School" className='w-full h-full object-cover'/>
+                <img src={skc3} alt="SKC Elementary School" className='row-span-2 w-full h-full object-cover' />
+                <img src={skc2} alt="SKC Elementary School" className='w-full h-full object-cover'/>
             </div>
 
             <div className='relative'>
-                <img src={hospital} alt="" />
+                <img src={hospital} alt="Meenakshisundharam Memorial Trust Hospital" />
                 <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent">
                     <h2 className='absolute -bottom-2 left-2 sm:-bottom-2 sm:left-2 text-white text-xl sm:text-2xl md:text-4xl font-semibold tracking-wider mb-4 flex items-center justify-center gap-3 '>
                         <TiArrowForwardOutline className='mt-2' /> Meenakshisundharam Memorial Trust Hospital <RiArrowDownDoubleLine className='mt-2' />
@@ -203,9 +203,9 @@ const Welcome = () => {
             </div>
 
             <div className='w-full grid grid-cols-2 p-2 sm:p-10 gap-1'>
-                <img src={hospital3} alt="" className='w-full h-full object-cover'/>
-                <img src={hospital2} alt="" className='row-span-2 w-full h-full object-cover' />
-                <img src={hospital1} alt="" className='w-full h-full object-cover'/>
+                <img src={hospital3} alt="Meenakshisundharam Memorial Trust Hospital" className='w-full h-full object-cover'/>
+                <img src={hospital2} alt="Meenakshisundharam Memorial Trust Hospital" className='row-span-2 w-full h-full object-cover' />
+                <img src={hospital1} alt="Meenakshisundharam Memorial Trust Hospital" className='w-full h-full object-cover'/>
             </div>
         </div>
     )

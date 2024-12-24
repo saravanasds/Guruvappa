@@ -7,7 +7,7 @@ const HomeAbout = () => {
     return (
         <div className='w-full h-auto bg-slate-200 sm:-mt-[95px] flex flex-col md:flex-row mb-8'>
             <div className='w-full md:w-[50%] '>
-                <img src={bgImage} alt="" className='w-full h-full object-cover' />
+                <img src={bgImage} alt="guruvappa school entrance" className='w-full h-full object-cover' />
             </div>
             <div className='relative w-full md:w-[50%] sm:py-8 overflow-hidden' >
                 <div className='absolute inset-0 w-full' style={{ backgroundImage: `url(${bgWay})`, backgroundSize: "cover" }}></div>

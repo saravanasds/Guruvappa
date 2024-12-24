@@ -76,7 +76,7 @@ const Legacy = () => {
                         <li>
                             <strong>S.K.C Memorial Kindergarten and Primary School,</strong> established in <strong>2002</strong>, offers education for children from <strong>LKG to 5th grade</strong>, currently serving around <strong>450</strong> students.
                         </li>
-                        <img src={skc} alt="" />
+                        <img src={skc} alt="S.K.C Memorial Kindergarten and Primary School" />
                     </ul>
                 </section>
 
@@ -94,7 +94,7 @@ const Legacy = () => {
                         <li className='pt-2'>
                             <strong>S.K.C Meenakshi Sundaram Memorial Hospital</strong>, a 24-hour medical facility, provides healthcare services to <strong>Neikkarapatti</strong> and nearby areas.
                         </li>
-                        <img src={hospital} alt="" />
+                        <img src={hospital} alt="S.K.C Meenakshi Sundaram Memorial Hospital" />
                     </ul>
                 </section>
 

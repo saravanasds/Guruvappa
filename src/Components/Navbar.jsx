@@ -43,7 +43,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between">
                     <div className="flex flex-col items-center justify-between w-full">
                         <div className="flex-shrink-0 text-secondary my-2 flex justify-center items-center gap-3 sm:gap-4">
-                            <img src={logo} alt="Logo" className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20" />
+                            <img src={logo} alt="guruvappa school Logo" className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20" />
                             <div className="my-2 flex flex-col justify-center items-center">
                                 <h1 className="uppercase text-left font-bold sm:text-xl md:text-xl lg:text-3xl tracking-normal lg:tracking-widest">
                                     Guruvappa Higher Secondary School
@@ -140,7 +140,7 @@ const Navbar = () => {
                             { to: "/curriculam", label: "Curriculum" },
                             { to: "/alumini", label: "Alumni" },
                             { to: "/gallery", label: "Gallery" },
-                            { to: "/staffs", label: "Staffs" },
+                            { to: "/staffs", label: "Staff" },
                             { to: "/calender", label: "Calendar" },
                             { to: "/blog", label: "Blog" },
                             { to: "/contact", label: "Contact" },

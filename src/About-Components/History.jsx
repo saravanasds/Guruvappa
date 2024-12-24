@@ -19,7 +19,7 @@ const History = () => {
                 <div className='w-full mx-auto flex justify-center items-center flex-wrap gap-4 lg:gap-20 mt-6 mb-10 bg-secondary py-8 text-white'>
                     <div className='flex flex-col justify-center items-center'>
                         <div className='border-4 border-gray-300 p-0.5'>
-                            <img src={skc} alt="" className='w-[270px] h-[350px] object-cover border border-gray-300 p-2' />
+                            <img src={skc} alt="S.K. CHINNACHAMY NAYAKKAR" className='w-[270px] h-[350px] object-cover border border-gray-300 p-2' />
                         </div>
                         <div className='flex flex-col text-center my-2'>
                             Honorable
@@ -29,7 +29,7 @@ const History = () => {
 
                     <div className=' flex flex-col justify-center items-center'>
                         <div className='border-4 border-gray-300 p-0.5'>
-                            <img src={ms} alt="" className='w-[270px] h-[350px] object-cover border border-gray-300 p-2' />
+                            <img src={ms} alt="C. MEENAKSHI SUNDHARAM" className='w-[270px] h-[350px] object-cover border border-gray-300 p-2' />
                         </div>
                         <div className='flex flex-col text-center my-2'>
                             Honorable
@@ -39,7 +39,7 @@ const History = () => {
 
                     <div className=' flex flex-col justify-center items-center'>
                         <div className='border-4 border-gray-300 p-0.5'>
-                            <img src={pms} alt="" className='w-[270px] h-[350px] object-cover border border-gray-300 p-2' />
+                            <img src={pms} alt="M. PADMAVATHI" className='w-[270px] h-[350px] object-cover border border-gray-300 p-2' />
                         </div>
                         <div className='flex flex-col text-center my-2'>
                             Honorable
@@ -69,7 +69,7 @@ const History = () => {
 
                 <div className='w-full xl:w-[40%]'>
                     <div className='relative w-full sm:w-[50%] xl:w-full h-full mx-auto'>
-                        <img src={correspond} alt="" className='h-full object-cover' />
+                        <img src={correspond} alt="Mr. M.RAJKUMAR" className='h-full object-cover' />
                         <div className='absolute w-full bg-black bg-opacity-40 bottom-0 z-10 flex flex-col text-center py-2 text-white'>
                             <span className='font-semibold tracking-wider' style={{ textShadow: "1px 1px 0px black" }}>Correspondent</span>
                             <span className='font-bold tracking-wider text-2xl' style={{ textShadow: "2px 2px 0px black" }}>Mr. M.RAJKUMAR</span>
@@ -103,7 +103,7 @@ const History = () => {
 
                 <div className='w-full xl:w-[35%]  '>
                     <div className='relative w-full sm:w-[50%] xl:w-full h-full mx-auto'>
-                        <img src={headMaster} alt="" className='h-full object-cover' />
+                        <img src={headMaster} alt="guruvappa school headmaster" className='h-full object-cover' />
                         <div className='absolute w-full bg-black bg-opacity-50 bottom-0 z-10 flex flex-col text-center py-2 text-white'>
                             <span className='font-semibold tracking-wider' style={{ textShadow: "1px 1px 0px black" }}>Head Mister</span>
                             <span className='font-bold tracking-wider text-2xl' style={{ textShadow: "2px 2px 0px black" }}>Ms. B.GEETHA</span>

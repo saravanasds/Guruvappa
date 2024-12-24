@@ -17,7 +17,7 @@ const Video = () => {
                     {/* Custom Thumbnail Image */}
                     <img
                         src={thumbnail}
-                        alt="Custom Thumbnail"
+                        alt="guruvappa school video thumbnail"
                         className='w-full h-full object-cover'
                     />
                     {/* Play Button (Optional) */}

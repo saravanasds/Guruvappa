@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import Img from '../assets/computer.jpg'; // Banner image path
 import axios from 'axios';
+import ClipLoader from 'react-spinners/ClipLoader';
 
 const Contact = () => {
 
@@ -12,6 +13,7 @@ const Contact = () => {
   });
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,6 +22,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const response = await axios.post('http://localhost:5000/api/admin/addMessage', formData);
       if (response.status === 201) {
@@ -30,6 +33,8 @@ const Contact = () => {
       }
     } catch (error) {
       setErrorMessage('Something went wrong. Please try again later.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -89,7 +94,7 @@ const Contact = () => {
               <button
                 type="submit"
                 className="w-full bg-blue-600 text-white py-2 sm:py-3 rounded-lg font-semibold hover:bg-blue-500 transition">
-                Send Message
+                {loading ? <ClipLoader size={25} color={"#123abc"} loading={loading} /> : 'Send Message'}
               </button>
             </form>
           </div>

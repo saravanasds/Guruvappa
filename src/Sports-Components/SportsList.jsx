@@ -17,7 +17,7 @@ const SportsList = () => {
 
                 <div className='relative w-full flex justify-start items-center'>
                     <div className='w-full rounded-lg overflow-hidden'>
-                        <img src={kabaddi} alt="" className='w-full h-full object-cover  border-white rounded-lg' />
+                        <img src={kabaddi} alt="guruvappa school kabaddi" className='w-full h-full object-cover  border-white rounded-lg' />
                     </div>
                     <div className='absolute bottom-0 left-0 bg-black w-full rounded-b-lg bg-opacity-60 p-3'>
                         <h2 className='text-2xl  text-white font-semibold'>Kabaddi</h2>
@@ -27,7 +27,7 @@ const SportsList = () => {
                 <div className='relative w-full  flex justify-end items-center'>
 
                     <div className=' w-full  rounded-lg overflow-hidden'>
-                        <img src={football} alt="" className='w-full h-full object-cover  border-white rounded-lg' />
+                        <img src={football} alt="guruvappa school football" className='w-full h-full object-cover  border-white rounded-lg' />
                     </div>
                     <div className='absolute bottom-0 left-0 bg-black w-full rounded-b-lg bg-opacity-60 p-3'>
                         <h2 className='text-2xl  text-white font-semibold'>Football</h2>
@@ -37,7 +37,7 @@ const SportsList = () => {
                 <div className='relative w-full  flex justify-start items-center'>
 
                     <div className=' w-full   rounded-lg overflow-hidden'>
-                        <img src={hockey} alt="" className='w-full h-full object-cover  border-white rounded-lg' />
+                        <img src={hockey} alt="guruvappa school hockey" className='w-full h-full object-cover  border-white rounded-lg' />
                     </div>
                     <div className='absolute bottom-0 left-0 bg-black w-full rounded-b-lg bg-opacity-60 p-3'>
                         <h2 className='text-2xl  text-white font-semibold'>Hockey</h2>
@@ -47,17 +47,17 @@ const SportsList = () => {
                 <div className='relative w-full  flex justify-end items-center '>
 
                     <div className=' w-full  rounded-lg overflow-hidden'>
-                        <img src={khokho} alt="" className='w-full h-full object-cover  border-white rounded-lg' />
+                        <img src={khokho} alt="guruvappa school kho-kho" className='w-full h-full object-cover  border-white rounded-lg' />
                     </div>
                     <div className='absolute bottom-0 left-0 bg-black w-full rounded-b-lg bg-opacity-60 p-3'>
-                        <h2 className='text-2xl  text-white font-semibold'>Kho Kho</h2>
+                        <h2 className='text-2xl text-white font-semibold'>Kho Kho</h2>
                     </div>
                 </div>
 
-                <div className='relative w-full  flex justify-start items-center'>
+                <div className='relative w-full flex justify-start items-center'>
 
-                    <div className=' w-full   rounded-lg overflow-hidden'>
-                        <img src={vollyball} alt="" className='w-full h-full object-cover  border-white rounded-lg' />
+                    <div className=' w-full  rounded-lg overflow-hidden'>
+                        <img src={vollyball} alt="guruvappa school vollyball" className='w-full h-full object-cover  border-white rounded-lg' />
                     </div>
                     <div className='absolute bottom-0 left-0 bg-black w-full rounded-b-lg bg-opacity-60 p-3'>
                         <h2 className='text-2xl  text-white font-semibold'>Vollyball</h2>
@@ -67,7 +67,7 @@ const SportsList = () => {
                 <div className='relative w-full  flex justify-end items-center '>
 
                     <div className=' w-full  rounded-lg overflow-hidden'>
-                        <img src={athletics} alt="" className='w-full h-full object-cover  border-white rounded-lg' />
+                        <img src={athletics} alt="guruvappa school athlete" className='w-full h-full object-cover  border-white rounded-lg' />
                     </div>
                     <div className='absolute bottom-0 left-0 bg-black w-full rounded-b-lg bg-opacity-60 p-3'>
                         <h2 className='text-2xl  text-white font-semibold'>Athletics</h2>
@@ -77,7 +77,7 @@ const SportsList = () => {
                 <div className='relative w-full  flex justify-start items-center'>
 
                     <div className=' w-full   rounded-lg overflow-hidden'>
-                        <img src={basketball} alt="" className='w-full h-full object-cover  border-white rounded-lg' />
+                        <img src={basketball} alt="guruvappa school basketball" className='w-full h-full object-cover  border-white rounded-lg' />
                     </div>
                     <div className='absolute bottom-0 left-0 bg-black w-full rounded-b-lg bg-opacity-60 p-3'>
                         <h2 className='text-2xl  text-white font-semibold'>Basketball</h2>
@@ -87,7 +87,7 @@ const SportsList = () => {
                 <div className='relative w-full  flex justify-end items-center '>
 
                     <div className=' w-full  rounded-lg overflow-hidden'>
-                        <img src={carrom} alt="" className='w-full h-full object-cover  border-white rounded-lg' />
+                        <img src={carrom} alt="guruvappa school carrom" className='w-full h-full object-cover  border-white rounded-lg' />
                     </div>
                     <div className='absolute bottom-0 left-0 bg-black w-full rounded-b-lg bg-opacity-60 p-3'>
                         <h2 className='text-2xl  text-white font-semibold'>Carrom</h2>
@@ -97,7 +97,7 @@ const SportsList = () => {
                 <div className='relative w-full  flex justify-start items-center'>
 
                     <div className=' w-full  rounded-lg overflow-hidden'>
-                        <img src={chess} alt="" className='w-full h-full object-cover  border-white rounded-lg' />
+                        <img src={chess} alt="guruvappa school chess" className='w-full h-full object-cover  border-white rounded-lg' />
                     </div>
                     <div className='absolute bottom-0 left-0 bg-black w-full rounded-b-lg bg-opacity-60 p-3'>
                         <h2 className='text-2xl  text-white font-semibold'>Chess</h2>

@@ -14,7 +14,7 @@ const SchoolHistory = () => {
                     <div className='flex flex-col items-center'>
                         <p className='text-2xl text-primary tracking-wider font-semibold text-center mb-4'>Our History of</p>
                         <div className='flex flex-row sm:flex-col justify-center items-center'>
-                            <img src={logo} alt="" className='w-16 h-16 sm:w-60 sm:h-60 sm:mb-2' />
+                            <img src={logo} alt="guruvappa school history" className='w-16 h-16 sm:w-60 sm:h-60 sm:mb-2' />
                             <div className='text-center'>
                                 <h2 className='text-3xl font-bold text-white tracking-wider uppercase'>Guruvappa </h2>
                                 <h2 className='text-sm md:text-lg text-gray-300  tracking-wider uppercase text-center'>Higher Secondary School </h2>

@@ -21,7 +21,7 @@ const VissionMission = () => {
                 </div>
 
                 <div className='w-full md:w-[50%] md:min-h-[70vh]'>
-                    <img src={vission} alt="" className='w-full md:min-h-[70vh] object-cover' />
+                    <img src={vission} alt="guruvappa school vision" className='w-full md:min-h-[70vh] object-cover' />
                 </div>
 
             </div>
@@ -29,7 +29,7 @@ const VissionMission = () => {
             <div className='w-full min-h-[70vh] flex flex-col-reverse md:flex-row justify-center items-center'>
 
                 <div className='w-full md:w-[50%] md:min-h-[70vh]'>
-                    <img src={mission} alt="" className='w-full md:min-h-[70vh] object-cover'/>
+                    <img src={mission} alt="guruvappa school mission" className='w-full md:min-h-[70vh] object-cover'/>
                 </div>
 
                 <div className='w-full md:w-[50%] md:min-h-[70vh] flex justify-center items-center px-4 lg:px-10 py-6'>
