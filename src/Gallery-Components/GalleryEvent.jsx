@@ -28,12 +28,12 @@ const GalleryEvent = () => {
     return (
         <div className='w-full min-h-screen'>
             {/* Display Events */}
-            <div className="w-[90%] mx-auto py-10">
+            <div className="w-[90%] mx-auto sm:py-10">
                 <h2 className="text-xl font-semibold text-white">Events</h2>
                 {loading ? (
                     <p>Loading events...</p>  // Display a loading message while events are being fetched
                 ) : (
-                    <div className="mt-3 grid grid-cols-4 gap-5">
+                    <div className="mt-3 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
                         {Array.isArray(events) && events.length > 0 ? (
                             events.map((event) => (
                                 <div

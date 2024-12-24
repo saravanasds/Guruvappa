@@ -1,18 +1,20 @@
 import React from 'react'
-import bgImage from "../assets/video.jpg"
+import bgImage from "../assets/mission.jpg"
+import { TiArrowForwardOutline } from "react-icons/ti";
+import { RiArrowDownDoubleLine } from "react-icons/ri";
 
 const BlogHero = () => {
     return (
-        <div className='relative w-full min-h-[60vh] flex justify-start items-end'>
+        <div className='relative w-full min-h-[40vh] sm:min-h-[60vh] flex justify-start items-end'>
             <div className='absolute inset-0 w-full' style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
             <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
-            <div className='relative my-20 mx-20'>
-                <h2 className='text-white text-5xl font-semibold tracking-wider mb-4'>Blogs </h2>
-                <p className='text-2xl text-primary font-semibold tracking-wider'>News & Updates</p>
+            <div className='relative my-4 sm:my-6 mx-4 sm:mx-20'>
+                <h2 className='text-white text-2xl sm:text-3xl md:text-4xl font-bold tracking-wider flex gap-3' style={{ textShadow: "4px 4px 0px black" }}><TiArrowForwardOutline className='mt-2' />Blogs & Updates <RiArrowDownDoubleLine className='mt-2' /></h2>
             </div>
         </div>
     )
 }
 
 export default BlogHero
+

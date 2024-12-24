@@ -7,12 +7,12 @@ const HomeContact = () => {
             <div className='relative w-full min-h-[90vh] flex flex-col items-center justify-center'>
                 <div className='absolute inset-0 w-full' style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "top" }}></div>
                 <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-l from-secondary via-[#1b2945f4] to-[#1b294545]"></div>
-                <div className='relative w-[80%] min-h-[70vh] flex gap-1'>
-                    <div className='w-full min-h-[70vh]'>
+                <div className='relative w-full sm:w-[80%] min-h-[70vh] flex gap-1'>
+                    <div className='hidden lg:block w-full min-h-[70vh]'>
 
                     </div>
                     <div className='w-full min-h-[70vh] p-4'>
-                        <h3 className='text-white text-3xl font-bold tracking-wider mb-8'>Contact Us</h3>
+                        <h3 className='text-white text-2xl sm:text-3xl text-center lg:text-left font-bold tracking-wider mb-8'>Contact Us</h3>
                         <form className="space-y-6">
                             <div>
                                 <label className="block text-gray-300 font-medium mb-1">Name</label>
@@ -61,9 +61,7 @@ const HomeContact = () => {
                     </div>
                 </div>
             </div>
-            <div className='relative w-full min-h-[30vh] bg-[#1B2434]'>
-
-            </div>
+           
         </>
     )
 }

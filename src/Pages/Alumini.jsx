@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import AlumniHero from '../Alumni-Components/AlumniHero'
+import AlumniDetails from '../Alumni-Components/AlumniDetails';
 
 const Alumini = () => {
   useEffect(() => {
@@ -9,6 +10,7 @@ const Alumini = () => {
   return (
     <div className='w-full flex flex-col justify-center items-center overflow-hidden'>
       <AlumniHero />
+      <AlumniDetails />
     </div>
   )
 }

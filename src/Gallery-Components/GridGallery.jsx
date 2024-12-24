@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
 import { useParams, Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
+import { RiArrowLeftDoubleFill } from "react-icons/ri";
 import axios from 'axios';
 
 const GridGallery = () => {
@@ -75,23 +76,24 @@ const GridGallery = () => {
   }, [isLightboxOpen]); // Dependency on `isLightboxOpen`
 
   return (
-    <div className='w-full min-h-screen bg-gray-100 py-10'>
+    <div className='w-full min-h-screen bg-gray-100 py-4 sm:py-10'>
 
-      <h2 className="w-[80%] mx-auto text-xl flex items-center gap-2 underline underline-offset-2 tracking-wider font-semibold text-gray-600 italic">
-        <Link to={"/gallery"}>Gallery</Link>
+      <h2 className="w-[90%] mx-auto text-lg sm:text-xl flex items-center gap-2 underline underline-offset-2 tracking-wider font-semibold text-gray-900 italic">
+        
+        <Link to={"/gallery"} className='flex items-center'><RiArrowLeftDoubleFill className="mt-1 "/> Gallery</Link>
         <IoIosArrowForward className="mt-1" />
         <span>{title}</span>
       </h2>
 
 
-      <div className="w-[80%] mx-auto grid grid-cols-3 gap-2 my-8">
+      <div className="w-[90%] mx-auto grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-2 my-4 sm:my-8">
 
         {images.map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`Image ${index + 1}`}
-            className="cursor-pointer w-full h-full object-cover"
+            className="cursor-pointer w-full h-full object-cover border-2 md:border-4 border-white shadow-sm shadow-black hover:scale-[1.02] transform transition-all"
             onClick={() => openLightbox(index)}
           />
         ))}
